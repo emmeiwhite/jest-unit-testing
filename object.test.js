@@ -19,4 +19,19 @@ describe('run some tests', () => {
     const profession = 'web developer'
     expect(profession).toBeTruthy()
   })
+
+  it('n is undefined', () => {
+    const n = undefined
+    expect(n).toBeUndefined()
+  })
+
+  it('n is not undefined', () => {
+    const n = 656
+    expect(n).not.toBeUndefined()
+  })
+
+  it('n is null', () => {
+    const n = null
+    expect(n).toBeNull()
+  })
 })
